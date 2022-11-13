@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>EMO - MUSIC Web App</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+
+  <nav class="navbar navbar-dark fixed-top bg-dark">
+    <div class="container-fluid navcontainer">
+      <a class="navbar-brand brand-name" href="#"><b>EMO - MUSIC</b>: Music for your Emotions
+      </a>
+    </div>
+  </nav>
+
+  <!--HEADER-->
+  <section class="header py-5">
+    <div class="animation">
+      <video src="./static/video_index.mp4" onloadedmetadata="this.muted = true" playsinline autoplay muted
+        onended="videoEnded()"></video>
+    </div>
+  </section>
+
+  <script>
+    function videoEnded() {
+      location.href = "signup_login.php";
+    }
+  </script>
+</body>
+
+</html>
